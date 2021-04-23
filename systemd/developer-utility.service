@@ -1,0 +1,10 @@
+[Unit]
+Description = Developer utility toolkit
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/devutil
+
+[Install]
+WantedBy=multi-user.target

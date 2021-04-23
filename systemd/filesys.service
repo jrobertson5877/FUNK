@@ -1,0 +1,10 @@
+[Unit]
+Description = Graphical user interface for filesystem management
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/sbin/fsdisk
+
+[Install]
+WantedBy=multi-user.target

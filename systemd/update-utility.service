@@ -1,0 +1,10 @@
+[Unit]
+Description = Developer utility toolkit helper daemon
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/update-utility
+
+[Install]
+WantedBy=multi-user.target
